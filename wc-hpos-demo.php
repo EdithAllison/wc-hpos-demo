@@ -26,16 +26,10 @@ define( 'WHD_PLUGIN_PATH' , __DIR__ );
 // Initiate the plugin
 add_action( 'plugins_loaded', __NAMESPACE__ . '\\init' );
 function init() {
-
-	include_once WHD_PLUGIN_PATH . '/includes/class-order-edit-examples.php';
 	include_once WHD_PLUGIN_PATH . '/includes/class-order-table-examples.php';
-
-	new Order_Edit_Examples();
-	new Order_Table_Examples();
-	
 }
 
-// HPOS compatibility
+// HPOS compatibility statement. Neeed for plugins that use "WC requires" and "WC tested up to" headers.
 add_action( 'before_woocommerce_init', function() {
 	if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
 		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
