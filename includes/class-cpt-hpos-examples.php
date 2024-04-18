@@ -10,6 +10,7 @@
 namespace AGAL\WHD;
 
 use \Automattic\WooCommerce\Utilities\OrderUtil;
+use \Automattic\WooCommerce\Internal\DataStores\Orders\CustomOrdersTableController;
 
 // If this file is called directly, abort.
 if ( ! defined( 'ABSPATH' ) ) {
@@ -105,10 +106,32 @@ class CPT_HPOS_Examples {
 		/* Use this. CRUD always works. */
 		$order       = wc_get_order( $order_id );
 		$custom_meta = $order->get_meta( '_codeable_key', true );
-		$custom_meta = $custom_meta .= 'test'; // just change something
+		$custom_meta = $custom_meta .= ' test'; // just change something
 
 		$order->update_meta_data( '_codeable_key', $custom_meta );
 		$order->save();
+
+	}
+
+	/**
+	 * Check if HPOS is enabled
+	 * 
+	 * use \Automattic\WooCommerce\Utilities\OrderUtil;
+	 * use \Automattic\WooCommerce\Internal\DataStores\Orders\CustomOrdersTableController;
+	 * 
+	 * @return bool 
+	 */
+	public function is_hpos_active() {
+		
+		/**
+		 * the long way
+		 */
+		//return wc_get_container()->get( \CustomOrdersTableController::class )->custom_orders_table_usage_is_enabled();
+
+		/**
+		 * the short way
+		 */
+		return \OrderUtil::custom_orders_table_usage_is_enabled();
 
 	}
 

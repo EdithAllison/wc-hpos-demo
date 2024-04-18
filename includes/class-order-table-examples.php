@@ -214,7 +214,7 @@ class Order_Table_Examples {
 		if ( 'vip' === $column ) {
 
 			if( $order->get_total() > 100.00 ) {
-				echo "💰";
+				echo "✅";
 			} 
 
 		} elseif( 'payment_method' === $column ) {
