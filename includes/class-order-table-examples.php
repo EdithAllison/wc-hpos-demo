@@ -300,7 +300,7 @@ class Order_Table_Examples {
 				array(
 					'key'     => '_urgent',
 					'value'   => 'yes',
-          'compare' => '='
+					'compare' => '='
 				)
 			);
 		}

@@ -58,8 +58,8 @@ class CPT_HPOS_Examples {
 	public static function get_order_status( $id ) {
 
 		/* Instead of this */
-	  //	$post = get_post( $id );
-  	//	$order_status = $post->post_status;
+		//	$post = get_post( $id );
+		//	$order_status = $post->post_status;
 
 		/* Use this */
 		$order = wc_get_order( $id );
@@ -134,11 +134,5 @@ class CPT_HPOS_Examples {
 		return \OrderUtil::custom_orders_table_usage_is_enabled();
 
 	}
-
-
-
-
-
-
 
 }

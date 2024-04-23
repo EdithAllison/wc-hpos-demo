@@ -24,9 +24,9 @@ https://github.com/woocommerce/woocommerce/blob/trunk/docs/high-performance-orde
 
 https://github.com/woocommerce/woocommerce/blob/trunk/docs/high-performance-order-storage/guide-large-store.md 
 
-https://github.com/woocommerce/woocommerce/wiki/High-Performance-Order-Storage-Upgrade-Recipe-Book 
+https://developer.woocommerce.com/docs/hpos-extension-recipe-book/
 
-https://github.com/woocommerce/woocommerce/wiki/HPOS-CLI-commands 
+https://developer.woocommerce.com/docs/hpos-cli-tools/
 
 https://github.com/orgs/woocommerce/projects/124 Project Kanban Board
 
@@ -44,11 +44,20 @@ https://developer.woocommerce.com/2023/03/07/woocommerce-subscriptions-hpos-unde
 https://developer.woo.com/2023/11/27/joining-the-conversation-woo-community-slack/ Channel #hpos-upgrade-party. 
 
 
+### WooCommerce Releases
+
+https://developer.woocommerce.com/releases/
+
+https://developer.woocommerce.com/changelog/
+
+https://github.com/woocommerce/woocommerce/blob/trunk/changelog.txt
+
+
 ### Working with Order Queries
 
 https://github.com/woocommerce/woocommerce/wiki/wc_get_orders-and-WC_Order_Query
 
-https://github.com/woocommerce/woocommerce/wiki/HPOS:-new-order-querying-APIs
+https://developer.woocommerce.com/docs/hpos-order-querying-apis/ 
 
 
 
