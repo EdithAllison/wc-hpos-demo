@@ -62,10 +62,11 @@ class Order_Table_Examples {
 		 * For more info on querying in HPOS see: https://github.com/woocommerce/woocommerce/wiki/wc_get_orders-and-WC_Order_Query
 		 * and https://github.com/woocommerce/woocommerce/wiki/HPOS:-new-order-querying-APIs
 		 */
-		add_action( 'woocommerce_order_list_table_restrict_manage_orders', array( $this, 'shop_order_filter' ), 20, 2 ); // HPOS hook
-		add_filter( 'woocommerce_shop_order_list_table_prepare_items_query_args', array( $this, 'shop_order_run_filter_hpos' ) ); // HPOS hook
 		add_action( 'restrict_manage_posts', array( $this, 'shop_order_filter' ), 20, 2 ); // CPT hook
 		add_filter( 'pre_get_posts', array( $this, 'shop_order_run_filter' ) ); // CPT hook
+		add_action( 'woocommerce_order_list_table_restrict_manage_orders', array( $this, 'shop_order_filter' ), 20, 2 ); // HPOS hook
+		add_filter( 'woocommerce_shop_order_list_table_prepare_items_query_args', array( $this, 'shop_order_run_filter_hpos' ) ); // HPOS hook
+		
 
 		/**
 		 * Add an action to bulk edit
@@ -183,7 +184,7 @@ class Order_Table_Examples {
 
 			$order = wc_get_order( $post );
 
-			// add your modifications
+			echo '<br/>Lorem Ipsum';
 			
 		}
 	}

@@ -9,7 +9,6 @@ This plugin demonstrates HPOS coding examples
 /includes/class-wc-examples.php => Code snippets from WooCommerce to show how WC handles HPOS compatibility internally
 
 
-
 ## Resources
 
 See internal Codeable Google Doc on HPOS for details (access for Codeable experts only)
@@ -35,6 +34,8 @@ https://developer.woocommerce.com/2022/09/29/high-performance-order-storage-back
 https://developer.woocommerce.com/2022/10/11/hpos-upgrade-faqs/
 
 https://developer.woocommerce.com/docs/developing-using-woocommerce-crud-objects/
+
+https://woocommerce.com/de/posts/platform-update-high-performance-order-storage-for-woocommerce/ 
 
 https://developer.woocommerce.com/2023/03/07/woocommerce-subscriptions-hpos-understanding-next-steps/ 
 

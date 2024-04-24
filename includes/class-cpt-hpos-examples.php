@@ -32,7 +32,7 @@ class CPT_HPOS_Examples {
 		/**
 		 * If we want to make our lives hard we could construct the link from scratch
 		 */
-		if ( \OrderUtil::custom_orders_table_usage_is_enabled() ) {
+		if ( OrderUtil::custom_orders_table_usage_is_enabled() ) {
 			// HPOS usage is enabled.
 			$url = esc_url( admin_url( 'admin.php?page=wc-orders' ) ) . '&action=edit&id=' . absint( $order->get_id() );
 		} else {
@@ -131,7 +131,7 @@ class CPT_HPOS_Examples {
 		/**
 		 * the short way
 		 */
-		return \OrderUtil::custom_orders_table_usage_is_enabled();
+		return OrderUtil::custom_orders_table_usage_is_enabled();
 
 	}
 
